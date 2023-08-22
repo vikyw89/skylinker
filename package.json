@@ -1,0 +1,16 @@
+{
+  "name": "skylinker",
+  "version": "1.0.0",
+  "description": "a cloud bookmark",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "czg": "^1.7.1",
+    "husky": "^8.0.0"
+  }
+}
