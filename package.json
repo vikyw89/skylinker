@@ -8,6 +8,7 @@
     "prepare": "husky install"
   },
   "author": "",
+  "type": "module",
   "license": "UNLICENSED",
   "devDependencies": {
     "czg": "^1.7.1",
