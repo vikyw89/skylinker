@@ -11,8 +11,12 @@
     "test": "npm run build && npm run format:fix",
     "dev": "npm run build:watch & nodemon ./dist/index.js",
     "start:prod": "pm2 start ./dist/index.js -i max && pm2 monit",
-    "format": "eslint .",
-    "format:fix": "eslint . --fix"
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "format": "npm run lint && npm run prettier",
+    "format:fix": "npm run lint:fix && npm run prettier:fix"
   },
   "name": "server",
   "version": "1.0.0",
@@ -24,6 +28,11 @@
   "devDependencies": {
     "@tsconfig/node-lts": "^18.12.4",
     "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "3.0.2",
     "typescript": "^5.1.6"
   }
 }
