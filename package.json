@@ -4,7 +4,7 @@
   "description": "a cloud bookmark",
   "main": "index.js",
   "scripts": {
-    "test": "cd client && npm run test",
+    "test": "cd client && npm run test && cd ../server && npm run test",
     "prepare": "husky install"
   },
   "author": "",
